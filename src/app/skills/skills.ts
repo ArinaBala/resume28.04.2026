@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './skills.html',
-  styleUrl: './skills.css',
+  styleUrls: ['./skills.css'],
 })
 export class SkillsComponent {
   skills = 'Angular, TypeScript, HTML, CSS, C++';
-certificates = 'Cisco, Angular Basics';
+  skillColor = 'green';
+
+  certificates = 'Cisco'; 
 }

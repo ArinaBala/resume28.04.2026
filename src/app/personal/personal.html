@@ -1,12 +1,11 @@
-<h2>Личная информация</h2>
+<h2 [ngClass]="{ 'highlight': isHighlighted }">
+  Личная информация
+</h2>
 
-<p>ФИО: {{ name }}</p>
-<p>Телефон: {{ phone }}</p>
-<p>Город: {{ city }}</p>
-<p>Email: {{ email }}</p>
+<p [ngStyle]="{ color: textColor, 'font-size': fontSize }">
+  {{ name }}
+</p>
 
-<img src="/assets/human.jpg" alt="Моё фото">
-
-<h3>Мои ссылки</h3>
-<a href="https://github.com/yourname">GitHub</a><br>
-<a href="https://linkedin.com/in/yourname">LinkedIn</a>
+<p>{{ phone }}</p>
+<p>{{ city }}</p>
+<p>{{ email }}</p>

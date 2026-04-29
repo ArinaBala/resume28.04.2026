@@ -1,16 +1,21 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-personal',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './personal.html',
-  styleUrl: './personal.css',
+  styleUrls: ['./personal.css']
 })
-export class PersonalComponent 
-{
-name = 'Арина Балашова';
-phone = '+380...';
-city = 'Одесса';
-email = 'arina@mail.com';
+export class PersonalComponent {
+  name = 'Арина Балашова';
+  phone = '+380...';
+  city = 'Одесса';
+  email = 'arina@mail.com';
+
+  isHighlighted = true;
+
+  textColor = 'blue';
+  fontSize = '20px';
 }

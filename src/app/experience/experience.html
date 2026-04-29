@@ -1,5 +1,6 @@
 <h2>Опыт работы</h2>
 
-<p>Должность: {{ job }}</p>
-<p>Компания: {{ company }}</p>
+<p [ngClass]="{ 'important': isImportant }">
+  {{ job }} - {{ company }}
+</p>
 <p>Период: {{ years }}</p>
